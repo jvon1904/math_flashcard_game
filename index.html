@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Flash Cards</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main blur" id="body">
+      <div class="stats">
+        <div class="stat timer" id="timer">
+          timer:<span class="span" id="time">60</span>
+        </div>
+        <div class="stat score" id="scorer">
+          correct:<span class="span" id="score">0</span>
+        </div>
+        <div class="stat incorrect" id="incorrecter">
+          incorrect:<span class="span" id="incorrect">0</span>
+        </div>
+        <div class="stat total-score" id="total-scorer">
+          score:<span class="span" id="total-score">0</span>
+        </div>
+        <div class="stat result" id="highscorer">
+          highscore:<span class="span" id="highscore">0</span>
+        </div>
+      </div>
+      <div class="equation">
+        <div class="digits">
+          <div class="left">
+            <div class="digit top-digit" id="top-digit">0</div>
+            <div class="digit bottom-digit" id="bottom-digit">0</div>
+          </div>
+          <div class="right">
+            <div class="sign">+</div>
+          </div>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="answers">
+        <div class="answer answer-1" id="answer-1">1</div>
+        <div class="answer answer-2" id="answer-2">2</div>
+        <div class="answer answer-3" id="answer-3">3</div>
+        <div class="answer answer-4" id="answer-4">4</div>
+        <div class="answer answer-5 hidden" id="answer-5">4</div>
+        <div class="answer answer-6 hidden" id="answer-6">4</div>
+      </div>
+    </main>
+
+    <div class="settings">
+      <div class="title">Start Game</div>
+      <div class="announce"></div>
+      <div class="buttons">
+        <button class="btn btn-start" id="start-button">Start</button>
+        <button class="btn btn-stats hidden" id="stats-button">
+          See Stats
+        </button>
+      </div>
+    </div>
+
+    <div class="statistics hidden">
+      <h2 class="stats-title">Satistics</h2>
+      <p class="stats-paragraph"></p>
+      <div class="buttons">
+        <button class="btn btn-start" id="stats-start-button">Start</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
